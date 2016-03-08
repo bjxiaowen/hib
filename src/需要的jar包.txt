@@ -1,0 +1,11 @@
+antlr-2.7.6.jar
+commons-collections-3.1.jar
+dom4j-1.6.1.jar
+ejb3-persistence.jar
+hibernate3.jar
+javassist-3.12.0.GA.jar
+jstl-1.2.jar
+jta-1.1.jar
+mysql-connector-java-5.1.35.jar
+slf4j-api-1.6.1.jar
+standard-1.1.2.jar
