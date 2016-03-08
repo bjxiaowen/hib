@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hib.pojo.Student" table="student">
+		<id name="sId" type="java.lang.String">
+			<column name="sid" />
+			<generator class="assigned" />
+		</id>
+		<property name="sName" type="java.lang.String">
+			<column name="sname" />
+		</property>
+		<property name="sex" type="java.lang.String">
+			<column name="sex" />
+		</property>
+		<property name="birtday" type="java.util.Date">
+			<column name="birtday" />
+		</property>
+	</class>
+	
+	<class name="com.hib.pojo.Course" table="course" >
+		<id name="cId" type="java.lang.String">
+			<column name="cid" />
+			<generator class="assigned" />
+		</id>
+		<property name="cName" type="java.lang.String">
+			<column name="cname" />
+		</property>
+		<property name="cRedit" type="java.lang.Integer">
+			<column name="credit" />
+		</property>
+	</class>
+	
+	<class name="com.hib.pojo.Score" table="score">
+		<id name="cId" type="java.lang.String">
+			<column name="cid" />
+			<generator class="assigned" />
+		</id>
+		<property name="sId" type="java.lang.String">
+			<column name="sid" />
+		</property>
+		<property name="grade" type="java.lang.Integer">
+			<column name="grade" />
+		</property>
+	</class>
+</hibernate-mapping>
